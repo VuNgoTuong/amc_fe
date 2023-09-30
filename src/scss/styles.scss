@@ -1,0 +1,40 @@
+.bg-opacity-5 {--bs-bg-opacity: 0.05;}
+table.z-custom-table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    tr{
+        td{
+            padding:15px 0px!important;
+            &:first-child{
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            &:last-child{
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+}
+
+
+.custom-scrollbar {
+	&::-webkit-scrollbar-track {
+		background-color: #f0f0f0;
+	}
+	&::-webkit-scrollbar {
+		width: 3px;
+		background-color: #000;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #bdbdbd;
+		border-radius: 100px;
+	}
+	padding-right: 6px;
+}
+
+.hover-rotate-reverse:hover{-webkit-animation:rotate-center .6s linear infinite reverse;animation:rotate-center .6s linear infinite reverse}
+@-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+
+.hover-jello:hover{-webkit-animation:jello-horizontal .9s both;animation:jello-horizontal .9s both}
+@-webkit-keyframes jello-horizontal{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes jello-horizontal{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
